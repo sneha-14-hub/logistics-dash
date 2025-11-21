@@ -1,0 +1,61 @@
+/* Make page take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex layout for sticky footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make main content grow to fill space */
+main.container {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .f-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.f-info a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.f-info a:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
+.f-info-socials i {
+  font-size: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.f-info-socials i:hover {
+  color: #0d6efd;
+}
